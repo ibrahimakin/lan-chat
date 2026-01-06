@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LAN Chat</title>
+    <meta name="theme-color" content="#0f0f14">
+    <meta name="description" content="Local Area Network Chat App">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div id="chat"></div>
+    <div id="progress" hidden>Sending...</div>
+    <div id="bottom">
+        <div id="files"></div>
+        <div>
+            <textarea id="msg" placeholder="Type message..." autofocus></textarea>
+            <input type="file" id="file" multiple hidden>
+            <button onclick="pickFile()" title="Attach Files">📎</button>
+            <button onclick="send()">Send</button>
+            <button onclick="clearAll()" title="Clear All">🧹</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
